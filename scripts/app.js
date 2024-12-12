@@ -23,7 +23,7 @@ function createProfileCard(data) {
       <div class="profile-card__content">
         <h2 class="profile-card__name">${user.firstName} ${user.lastName}</h2>
         <p class="profile-card__title">${user.gender}</p>
-        <a href="./pages/info.html" class="profile-card__btn" id="${user.id}">About Me</a>
+        <a href="#" class="profile-card__btn" id="${user.id}">About Me</a>
       </div>
     `
     ProfileCards.appendChild(profileCard)
