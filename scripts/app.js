@@ -1,6 +1,9 @@
 const Base_Url = "https://dummyjson.com"
 const ProfileCards = document.querySelector(".profile-cards")
 
+const loadingEl = document.querySelector(".loading")
+const loader = document.querySelector(".loader")
+
 async function fetchData(endpoint) {
   const response =  await fetch(`${Base_Url}${endpoint}`)
   response
@@ -31,9 +34,5 @@ function createProfileCard(data) {
   })
 
 }
-
-
-const loadingEl = document.querySelector(".loading")
-const loader = document.querySelector(".loader")
 
 
