@@ -7,6 +7,7 @@ async function fetchData(endpoint) {
     .json()
     .then(res => createProfileCard(res))
     .catch(error => console.log(error))
+    .finally(() => loadingEl.style.display = "none")
 }
 
 fetchData("/users")
@@ -30,3 +31,9 @@ function createProfileCard(data) {
   })
 
 }
+
+
+const loadingEl = document.querySelector(".loading")
+const loader = document.querySelector(".loader")
+
+
